@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Updates for Södra Öland</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Södra Öland Weather Forecast - Latest Updates</h1>
+
+    <!-- Subtitle: Powered by LSTM Model -->
+    <h2>Powered by LSTM Model</h2>
+
+    <h2>LSTM Weather Prediction</h2>
+    <p>Predicted Rain: {{ rain_prediction }}</p>
+    <p>Predicted Wind Velocity: {{ wind_velocity }} m/s</p>
+
+    <h2>SMHI Weather Forecast</h2>
+    <p>Predicted Temperature: {{ temperature }} °C</p>
+
+</body>
+</html>

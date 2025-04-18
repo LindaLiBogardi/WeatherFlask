@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Öland Weather Forecast</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+   <div class="container">
+       <h1>🌦️ Weather Forecast for Södra Öland</h1>
+       <p><strong>Prediction for Tomorrow, Powered by LSMT Model:</strong></p>
+       <p>Rain or Not: <strong>{{ rain }}</strong></p>
+       <p>Wind Velocity: <strong>{{ wind }} m/s</strong></p>
+   </div>
+</body>
+</html>
